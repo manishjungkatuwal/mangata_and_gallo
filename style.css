@@ -62,6 +62,9 @@ a:hover{
     text-align: center;
 }
 
+/*
+The image slide in the home page.
+*/
 .carousel {
     grid-area: carousel;
     display: flex;
