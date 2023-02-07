@@ -1,3 +1,7 @@
+/**
+Created by: Manish Katuwal
+*/
+
 * {
     margin: 0%;
     padding: 0%;
@@ -62,6 +66,9 @@ a:hover{
     text-align: center;
 }
 
+/*
+The image slide in the home page.
+*/
 .carousel {
     grid-area: carousel;
     display: flex;
@@ -69,6 +76,8 @@ a:hover{
     overflow-x: auto;
     margin-left: 1%;
     margin-right: 1%;
+    width: 90vw;
+    height: auto;
     max-height: 344px;
     max-width: 440px;
     margin: auto;
