@@ -1,0 +1,191 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "nav" "main" "footer" ;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.header img {
+    width: 80vw;
+    height: auto;
+    max-width: 100%;
+    margin-top: 1vh;
+}
+
+.nav{
+    grid-area: nav;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: skyblue;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav ul li{
+    text-align: center;
+    list-style-type: none;
+
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    background-color: white;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "carousel" "company_intro" "box";
+}
+
+.main > .box{
+    text-align: center;
+}
+
+.carousel {
+    grid-area: carousel;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-height: 344px;
+    max-width: 440px;
+    margin: auto;
+}
+
+.slide{
+    text-align: center;
+    flex-shrink: 0.01;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide > img {
+    width: 440px;
+    height: 320px;
+    max-width: 440px;
+    max-height: 320px;
+    object-fit: fill;
+}
+
+.company_intro{
+    grid-area:company_intro;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+}
+
+.box{
+    grid-area: box;
+    display:flex;
+    text-align: center;
+    gap: 5vw;
+    margin:auto;
+}
+
+.flexible_collection{
+    grid-area: flexible_collection;
+    background-color: rgb(201, 231, 243);
+    object-fit: cover;
+}
+
+.bridal{
+    grid-area: bridal;
+    background-color: rgb(201, 231, 243);
+}
+
+.mounting{
+    grid-area: mounting;
+    background-color: rgb(201, 231, 243);
+}
+
+.flexible_collection:hover {
+    box-shadow: 0px -2px black, 0px 2px black;
+}
+
+.bridal:hover{
+    box-shadow: 0px -2px black, 0px 2px black;
+}
+
+.mounting:hover{
+    box-shadow: 0px -2px black, 0px 2px black;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer > div{
+    margin:auto;
+    text-align: center;
+}
+
+@media (min-width: 440px) {
+    .footer{
+        background-color: skyblue;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.footer{
+    margin-top: 1vh;
+    background-color: skyblue;
+    display: flex;
+    position: right;
+    flex-wrap: wrap;
+    
+}
+
+/*Additionl CSS for About Us web page*/
+.owners_intro{
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+}
+
+.owners_profile{
+    text-align: center;
+    margin: auto;
+}
+
+#owners_profile{
+    width: 80vw;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/*For Products Web page*/
+.form{
+    text-align: center;
+    border-radius: 10%;
+    margin:1%;
+    background-color: rgb(201, 231, 243);
+}
+
+.form div{
+    margin:1%;
+}
