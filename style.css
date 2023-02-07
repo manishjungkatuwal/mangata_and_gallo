@@ -110,7 +110,8 @@ The image slide in the home page.
     grid-area: box;
     display:flex;
     text-align: center;
-    gap: 5vw;
+    gap: 2vw;
+    padding: 1.5%;
     margin:auto;
 }
 
